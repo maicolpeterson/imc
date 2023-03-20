@@ -1,0 +1,28 @@
+<script>
+    
+    pacientes = prompt("DIGITE O NÚMERO DE PACIENTES:");
+    pacientes = parseInt(pacientes);
+
+    for(x=1;x<=pacientes;x++)
+    {
+        n = prompt("DIGITE SEU NOME:");
+        i = prompt("DIGITE SUA IDADE:");
+        i = parseInt(i);  
+        p = prompt("DIGITE SEU PESO:");
+        p = parseFloat(p);
+        a = prompt("DIGITE SUA ALTURA:");
+        a = parseFloat(a);
+        imc = p / Math.pow(a,2);
+
+        if (imc < 18.5)
+        {
+            console.log(n,i,imc,"Abaixo do peso normal");
+        }
+
+        if (imc > 18.5 && imc < 24.9)
+        {
+            console.log(n,i,imc,"Peso normal");
+        }
+        
+    }
+</script>
